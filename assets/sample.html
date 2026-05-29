@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>VerdeLuxo Eventos - O cenário perfeito para seus momentos</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "inverse-primary": "#b0cdbb",
+            "on-surface-variant": "#424844",
+            "surface-tint": "#496455",
+            "on-primary-fixed": "#062014",
+            "secondary-fixed": "#ccebc7",
+            "secondary-container": "#ccebc7",
+            "inverse-on-surface": "#f2f0ed",
+            "primary-fixed": "#ccead6",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed": "#3d0700",
+            "on-surface": "#1b1c1a",
+            "surface-container-high": "#eae8e4",
+            "on-secondary-fixed-variant": "#334d33",
+            "inverse-surface": "#30312e",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed-dim": "#ffb4a3",
+            "error": "#ba1a1a",
+            "on-tertiary-fixed-variant": "#812914",
+            "on-secondary-fixed": "#07200b",
+            "surface-variant": "#e4e2de",
+            "primary": "#173124",
+            "on-primary": "#ffffff",
+            "tertiary-fixed": "#ffdad2",
+            "tertiary": "#590e00",
+            "tertiary-container": "#79230f",
+            "surface-container-highest": "#e4e2de",
+            "on-tertiary-container": "#ff8e73",
+            "on-background": "#1b1c1a",
+            "primary-fixed-dim": "#b0cdbb",
+            "surface": "#fbf9f5",
+            "surface-container": "#efeeea",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed-variant": "#324c3e",
+            "secondary-fixed-dim": "#b0cfad",
+            "on-error-container": "#93000a",
+            "outline": "#727973",
+            "on-secondary-container": "#506b4f",
+            "on-primary-container": "#98b5a3",
+            "primary-container": "#2d4739",
+            "background": "#fbf9f5",
+            "surface-bright": "#fbf9f5",
+            "outline-variant": "#c2c8c2",
+            "surface-container-low": "#f5f3ef",
+            "on-error": "#ffffff",
+            "secondary": "#4a6549",
+            "surface-dim": "#dbdad6",
+            "error-container": "#ffdad6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-desktop": "48px",
+            "section-gap-desktop": "120px",
+            "container-max-width": "1280px",
+            "section-gap-mobile": "64px",
+            "base": "8px",
+            "gutter": "24px",
+            "margin-mobile": "20px"
+          },
+          "fontFamily": {
+            "body-md": [
+              "Plus Jakarta Sans"
+            ],
+            "label-md": [
+              "Plus Jakarta Sans"
+            ],
+            "display-lg": [
+              "Noto Serif"
+            ],
+            "display-lg-mobile": [
+              "Noto Serif"
+            ],
+            "body-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-md": [
+              "Noto Serif"
+            ],
+            "headline-sm": [
+              "Noto Serif"
+            ]
+          },
+          "fontSize": {
+            "body-md": [
+              "16px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "label-md": [
+              "14px",
+              {
+                "lineHeight": "1",
+                "letterSpacing": "0.05em",
+                "fontWeight": "600"
+              }
+            ],
+            "display-lg": [
+              "56px",
+              {
+                "lineHeight": "1.1",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "700"
+              }
+            ],
+            "display-lg-mobile": [
+              "36px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "700"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-md": [
+              "32px",
+              {
+                "lineHeight": "1.3",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-sm": [
+              "24px",
+              {
+                "lineHeight": "1.4",
+                "fontWeight": "600"
+              }
+            ]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-background text-on-background font-body-md text-body-md antialiased overflow-x-hidden">
+  <!-- Top Navigation (Shared Component) -->
+  <nav
+    class="fixed top-0 w-full z-50 shadow-sm bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md dark:shadow-none transition-all duration-300"
+    id="navbar">
+    <div class="max-w-container-max-width mx-auto px-margin-desktop flex justify-between items-center h-20">
+      <!-- Brand -->
+      <a class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim tracking-tight"
+        href="#">VerdeLuxo Eventos</a>
+      <!-- Links (Desktop) -->
+      <div class="hidden md:flex gap-gutter items-center">
+        <a class="text-on-surface-variant dark:text-on-surface-variant/80 font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300"
+          href="#galeria">Galeria</a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant/80 font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300"
+          href="#beneficios">Benefícios</a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant/80 font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300"
+          href="#estrutura">Estrutura</a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant/80 font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300"
+          href="#depoimentos">Depoimentos</a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant/80 font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300"
+          href="#localizacao">Localização</a>
+        <a class="bg-tertiary-container text-on-tertiary-container px-6 py-3 rounded-full font-label-md text-label-md hover:opacity-90 transition-opacity flex items-center gap-2 ml-4"
+          href="#reserva">
+          <span class="material-symbols-outlined" data-icon="chat" data-weight="fill"
+            style="font-variation-settings: 'FILL' 1;">chat</span>
+          Reservar via WhatsApp
+        </a>
+      </div>
+      <!-- Mobile Menu Toggle -->
+      <button class="md:hidden text-primary p-2">
+        <span class="material-symbols-outlined" data-icon="menu">menu</span>
+      </button>
+    </div>
+  </nav>
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center justify-center pt-20 bg-surface-container overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <img alt="Event garden" class="w-full h-full object-cover object-center"
+          data-alt="A breathtaking outdoor event space in a lush garden setting at golden hour. The scene features elegantly set wooden tables with white linen runners, soft string lights strung across ancient trees, and subtle floral arrangements in a natural palette of deep forest green and warm cream. The atmosphere is luxurious, serene, and perfectly curated for a high-end celebration. High-key lighting accents the foliage, creating a sense of natural sophistication."
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBut6j_pBBBqagyX_iTRaAxcor2kxMKcrBC92KjhrNhfBJazh0180krqC4SpSWY0cNRrTAjCXwnG_GUDdp3Q2JhcaNcLGbgVj-IP9NFERILzHpfNiXl7Irnvri7BF7SP10v6ZnYmbLuL72Q0IYn8nT-U3UmRemNfaBDGDoR5F8IYvkT08BkeOchZose55v-ZaBV1CWoFjibhHgYCtGL06myv_ixJxxEqULhkRlxxaNPaXH4-bbWN8tBbrbpqYf-sSd3JOtqg_ymNtE">
+      </div>
+      <div
+        class="relative z-20 max-w-container-max-width mx-auto px-margin-desktop text-center flex flex-col items-center">
+        <span
+          class="inline-block py-2 px-4 bg-secondary-container/80 backdrop-blur-sm text-on-secondary-container rounded-full font-label-md text-label-md mb-6 uppercase tracking-widest shadow-sm">
+          Espaço Exclusivo
+        </span>
+        <h1 class="font-display-lg text-display-lg text-on-primary max-w-4xl mb-6 drop-shadow-md">
+          O cenário perfeito para os seus momentos mais inesquecíveis
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-primary/90 max-w-2xl mb-10 drop-shadow">
+          Celebre aniversários, chás revelação e eventos familiares em um refúgio de paz e natureza, com estrutura
+          completa e sofisticação.
+        </p>
+        <a class="bg-tertiary-container text-on-tertiary-container px-8 py-4 rounded-full font-label-md text-label-md hover:bg-tertiary transition-colors duration-300 flex items-center gap-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+          href="#reserva">
+          <span class="material-symbols-outlined" data-icon="chat" data-weight="fill"
+            style="font-variation-settings: 'FILL' 1;">chat</span>
+          Reservar pelo WhatsApp
+        </a>
+      </div>
+      <!-- Scroll Indicator -->
+      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 text-on-primary animate-bounce">
+        <span class="material-symbols-outlined text-4xl" data-icon="expand_more">expand_more</span>
+      </div>
+    </section>
+    <!-- 2. Galeria de Fotos (Bento Grid) -->
+    <section class="py-section-gap-desktop bg-background" id="galeria">
+      <div class="max-w-container-max-width mx-auto px-margin-desktop">
+        <div class="text-center mb-16">
+          <h2 class="font-headline-md text-headline-md text-primary mb-4">Experiências Reais</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            Inspire-se com os momentos mágicos vividos em nosso espaço. Da diversão infantil à elegância de um evento
+            romântico.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter auto-rows-[300px]">
+          <!-- Item 1 (Large) -->
+          <div class="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden relative group shadow-sm">
+            <img alt="Festa Familiar"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              data-alt="A lively family gathering in a sunlit outdoor garden venue. People are laughing around a long wooden table laden with food, surrounded by lush green foliage. The aesthetic is light, airy, and joyful, emphasizing natural sophistication and the warmth of shared moments. The color palette highlights vibrant greens, soft creams, and natural wood tones."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_IystbhwjVOpI0Ec5tOO475VulriRKNGQ74qFfAVYhUKs9JYVw0Sugd2WROyifTjRQIhJD9ACRf-65P6ys7v6WWMFAVEOUvPPhTzJdI9J9F0zragwrKtxdtZERLyREiVgdxdMx-r85ceHlNg-eajlaQ8Ng5sMGsxv3ZdUHAk5Aeqm-jgIii_uZrHhHdRSPjf95nfJ4o-gfN5MiELc93fMxXFLsJbyNHqsmp3V1pZIPdtzavc6DT5tCEawHBx004G0rPxRTjksfRU">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+              <span class="text-on-primary font-headline-sm text-headline-sm">Celebrações Familiares</span>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="rounded-xl overflow-hidden relative group shadow-sm">
+            <img alt="Festa Infantil"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              data-alt="A beautifully decorated children's party setup outdoors. Colorful but tasteful balloons, a beautifully frosted cake on a wooden stand, and small rustic chairs. The lighting is bright and cheerful, maintaining the sophisticated natural aesthetic of the venue. The overall mood is whimsical yet elegant."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9_yW0zZpFLceiZ5dX6OTLxQc_VVWWdpMDKKNUyHVlcBtecYXHoyxcpgRWX7HF6O0tI6OjgV_4PTSjRNmfplQCb9yHEY-rtg6w5qgYaNLv2W9JCSnBdQCt9Fa86hcQcUmOF11JnisAJPKMzKfKKg843P0vDLgwFQI8iIlqvYo9AlhE7TNxv_lopqqov-ce2xxqatzc56QbkXmsyXwZks_5gVjNO5OXcVGwPLiJ9M0KTIc5Ujrl-smLpMy1Cma-HKUpZ4ubVOaN5-c">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <span class="text-on-primary font-headline-sm text-headline-sm">Aniversários Infantis</span>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="rounded-xl overflow-hidden relative group shadow-sm">
+            <img alt="Evento Romântico"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              data-alt="An intimate romantic setup in an outdoor venue at dusk. A small table for two is illuminated by candle light and soft string lights hanging from branches above. The mood is highly romantic, peaceful, and luxurious. The color palette focuses on warm golds, deep shadows, and touches of classic terracotta."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0VpSzp8CDXKlfRvm5vJgdOoE6hN632C63DZJjZpron-NecTd-3BGplskQQd5zhKeqQ1aR4kSYMeCmKgyt6niRZeTM8QkBJbrurYhkrbeTyMfuoLI-d5OgKfgwcUtL5AqT6Y6EC-Mpf8Qr0RjeTKchI3J04Ny2IKrg5RLs3QfgXmyzRAuy1CMG7NcY5kU-NkPfUvUTaizCzA6YoCTRUrcYKyR6Z0kgk3r7-_ASlWeCZiCRehVtwAlonNt26_uHKqwdd0GwEn9Pm4Y">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <span class="text-on-primary font-headline-sm text-headline-sm">Momentos a Dois</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 3. Benefícios -->
+    <section class="py-section-gap-desktop bg-surface-container-low" id="beneficios">
+      <div class="max-w-container-max-width mx-auto px-margin-desktop">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter text-center">
+          <div
+            class="p-8 bg-surface rounded-2xl shadow-[0_20px_40px_rgba(23,49,36,0.05)] flex flex-col items-center gap-4 hover:-translate-y-2 transition-transform duration-300">
+            <div
+              class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-2">
+              <span class="material-symbols-outlined text-3xl" data-icon="park">park</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-primary">Contato com a Natureza</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Um ambiente cercado por verde, ar puro e tranquilidade para recarregar as energias.
+            </p>
+          </div>
+          <div
+            class="p-8 bg-surface rounded-2xl shadow-[0_20px_40px_rgba(23,49,36,0.05)] flex flex-col items-center gap-4 hover:-translate-y-2 transition-transform duration-300">
+            <div
+              class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-2">
+              <span class="material-symbols-outlined text-3xl" data-icon="vpn_key">vpn_key</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-primary">Privacidade Exclusiva</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Seu evento será o único no dia, garantindo total privacidade para seus convidados.
+            </p>
+          </div>
+          <div
+            class="p-8 bg-surface rounded-2xl shadow-[0_20px_40px_rgba(23,49,36,0.05)] flex flex-col items-center gap-4 hover:-translate-y-2 transition-transform duration-300">
+            <div
+              class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-2">
+              <span class="material-symbols-outlined text-3xl" data-icon="diversity_3">diversity_3</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-primary">Ambiente Familiar</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Espaços desenhados para acolher todas as idades com segurança e conforto.
+            </p>
+          </div>
+          <div
+            class="p-8 bg-surface rounded-2xl shadow-[0_20px_40px_rgba(23,49,36,0.05)] flex flex-col items-center gap-4 hover:-translate-y-2 transition-transform duration-300">
+            <div
+              class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-2">
+              <span class="material-symbols-outlined text-3xl" data-icon="map">map</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-primary">Fácil Acesso</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Localização privilegiada, de fácil chegada e com amplo estacionamento interno.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 8. CTA Final -->
+    <section class="py-section-gap-desktop bg-surface-container-low" id="depoimentos">
+      <div class="max-w-container-max-width mx-auto px-margin-desktop">
+        <div class="text-center mb-16">
+          <h2 class="font-headline-md text-headline-md text-primary mb-4">O que nossos clientes dizem</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            Compartilhamos o orgulho de fazer parte de momentos que se tornam mem3rias eternas.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          <!-- Testimonial 1 -->
+          <div class="bg-surface p-8 rounded-2xl shadow-[0_10px_30px_rgba(23,49,36,0.03)] flex flex-col h-full">
+            <div class="flex gap-1 mb-4 text-tertiary">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+              "A festa de 1 ano do meu filho foi m1gica. O espa7o 1 amplo e as crian7as se divertiram muito com
+              seguran7a."
+            </p>
+            <span class="font-label-md text-label-md text-primary">Mariana Souza</span>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="bg-surface p-8 rounded-2xl shadow-[0_10px_30px_rgba(23,49,36,0.03)] flex flex-col h-full">
+            <div class="flex gap-1 mb-4 text-tertiary">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+              "Alugamos para o nosso ch1 revela73o e foi perfeito. A ilumina73o natural rende fotos incr3veis."
+            </p>
+            <span class="font-label-md text-label-md text-primary">Ricardo &amp; Aline</span>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="bg-surface p-8 rounded-2xl shadow-[0_10px_30px_rgba(23,49,36,0.03)] flex flex-col h-full">
+            <div class="flex gap-1 mb-4 text-tertiary">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+              "Lugar impec1vel, muito bem cuidado e com uma energia 7nica. Recomendo para quem busca sofistica73o na
+              natureza."
+            </p>
+            <span class="font-label-md text-label-md text-primary">Juliana Costa</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-section-gap-desktop bg-primary text-on-primary" id="reserva">
+      <div class="max-w-container-max-width mx-auto px-margin-desktop text-center flex flex-col items-center">
+        <h2 class="font-display-lg text-display-lg mb-6 max-w-3xl">Sua festa merece um lugar especial.</h2>
+        <p class="font-body-lg text-body-lg text-on-primary/90 mb-10 max-w-2xl">
+          Fale conosco agora e garanta sua data! Nossa agenda é concorrida e oferecemos condições exclusivas para
+          reservas antecipadas.
+        </p>
+        <a class="bg-tertiary-container text-on-tertiary-container px-10 py-5 rounded-full font-label-md text-label-md text-lg hover:bg-tertiary transition-colors duration-300 flex items-center gap-3 shadow-lg hover:shadow-2xl transform hover:-translate-y-1"
+          href="#">
+          <span class="material-symbols-outlined text-2xl" data-icon="chat" data-weight="fill"
+            style="font-variation-settings: 'FILL' 1;">chat</span>
+          Conversar no WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+  <!-- Footer (Shared Component) -->
+  <footer
+    class="w-full py-section-gap-desktop bg-surface-container-high dark:bg-surface-container-highest border-t border-outline-variant dark:border-outline">
+    <div class="max-w-container-max-width mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+      <!-- Brand Column -->
+      <div class="col-span-1 md:col-span-2">
+        <a class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim block mb-4"
+          href="#">VerdeLuxo Eventos</a>
+        <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          O cenário perfeito para os seus momentos mais inesquecíveis. Sofisticação e natureza em um só lugar.
+        </p>
+      </div>
+      <!-- Links Column -->
+      <div class="flex flex-col gap-3">
+        <h4 class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed-dim mb-2">Legal</h4>
+        <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant/80 hover:text-tertiary-container dark:hover:text-tertiary-fixed-dim hover:underline transition-all"
+          href="#">Privacidade</a>
+        <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant/80 hover:text-tertiary-container dark:hover:text-tertiary-fixed-dim hover:underline transition-all"
+          href="#">Termos de Uso</a>
+      </div>
+      <!-- Links Column -->
+      <div class="flex flex-col gap-3">
+        <h4 class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed-dim mb-2">Ajuda</h4>
+        <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant/80 hover:text-tertiary-container dark:hover:text-tertiary-fixed-dim hover:underline transition-all"
+          href="#">FAQ</a>
+        <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant/80 hover:text-tertiary-container dark:hover:text-tertiary-fixed-dim hover:underline transition-all"
+          href="#">Contato</a>
+      </div>
+    </div>
+    <div
+      class="max-w-container-max-width mx-auto px-margin-desktop mt-16 pt-8 border-t border-outline-variant/50 text-center">
+      <p class="font-body-md text-body-md text-on-surface-variant">© 2024 VerdeLuxo Eventos. Todos os direitos
+        reservados.</p>
+    </div>
+  </footer>
+  <!-- Floating WhatsApp Button -->
+  <a class="fixed bottom-8 right-8 bg-tertiary-container text-on-tertiary-container w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:bg-tertiary transition-colors z-50 transform hover:scale-110"
+    href="#reserva">
+    <span class="material-symbols-outlined text-3xl" data-icon="chat" data-weight="fill"
+      style="font-variation-settings: 'FILL' 1;">chat</span>
+  </a>
+  <script>
+    // Simple navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('shadow-md');
+      } else {
+        nav.classList.remove('shadow-md');
+      }
+    });
+  </script>
+
+
+</body>
+
+</html>
