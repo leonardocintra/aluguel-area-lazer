@@ -54,7 +54,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center pt-20 bg-surface-container overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center pt-20 pb-16 md:pb-0 bg-surface-container overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <Image
@@ -77,7 +77,7 @@ export function Hero() {
           Celebre aniversários, chás revelação e eventos familiares em um refúgio de paz e natureza, com estrutura completa e sofisticação.
         </p>
         <MagneticButton>
-          <button type="button" className="bg-linear-to-r from-[#075E54] to-[#25D366] hover:from-[#054d47] hover:to-[#1fa855] transition-all px-10 text-lg text-white py-4 rounded-full shadow-lg">
+          <button type="button" className="bg-linear-to-r from-[#075E54] to-[#25D366] hover:from-[#054d47] hover:to-[#1fa855] transition-all px-10 text-lg text-white pt-4 pb-5 mb-6 rounded-full shadow-lg">
             Reservar agora pelo WhatsApp
           </button>
         </MagneticButton>
