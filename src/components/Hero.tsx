@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
+import { MagneticButton } from "./ui/magnetic-button";
 
 const HERO_FALLBACK_IMAGE = "/img/hero.jpg";
 const HERO_PEXELS_QUERY = "outdoor party venue garden";
@@ -76,10 +76,11 @@ export function Hero() {
         <p className="font-body-lg text-body-lg text-on-primary/90 max-w-2xl mb-10 drop-shadow">
           Celebre aniversários, chás revelação e eventos familiares em um refúgio de paz e natureza, com estrutura completa e sofisticação.
         </p>
-        <Link href="#reserva" className="bg-tertiary-container text-on-tertiary-container px-8 py-4 rounded-full font-label-md text-label-md hover:bg-tertiary transition-colors duration-300 flex items-center gap-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-          <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>chat</span>
-          Reservar pelo WhatsApp
-        </Link>
+        <MagneticButton>
+          <button type="button" className="bg-linear-to-r from-[#075E54] to-[#25D366] hover:from-[#054d47] hover:to-[#1fa855] transition-all px-10 text-lg text-white py-4 rounded-full shadow-lg">
+            Reservar agora pelo WhatsApp
+          </button>
+        </MagneticButton>
       </div>
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 text-on-primary animate-bounce">
         <span className="material-symbols-outlined text-4xl">expand_more</span>

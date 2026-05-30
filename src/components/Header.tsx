@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,11 +16,10 @@ export function Header() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
           ? "shadow-md bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md dark:shadow-none"
           : "bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md shadow-sm dark:shadow-none"
-      }`}
+        }`}
     >
       <div className="max-w-container-max-width mx-auto px-margin-desktop flex justify-between items-center h-20">
         <Link href="#" className="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim tracking-tight">
@@ -47,7 +46,7 @@ export function Header() {
             Reservar via WhatsApp
           </Link>
         </div>
-        <button className="md:hidden text-primary p-2">
+        <button type="button" className="md:hidden text-primary p-2">
           <span className="material-symbols-outlined">menu</span>
         </button>
       </div>
