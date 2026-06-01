@@ -73,7 +73,7 @@ export function Hero() {
         <h1 className="font-display-lg text-display-lg text-on-primary max-w-4xl mb-6 drop-shadow-md">
           O cenário perfeito para os seus momentos mais inesquecíveis
         </h1>
-        <p className="font-body-lg text-body-lg text-on-primary/90 max-w-2xl mb-10 drop-shadow">
+        <p className="font-body-lg text-body-lg text-on-primary/90 max-w-2xl mb-10">
           Celebre aniversários, chás revelação e eventos familiares em um refúgio de paz e natureza, com estrutura completa e sofisticação.
         </p>
         <MagneticButton>
